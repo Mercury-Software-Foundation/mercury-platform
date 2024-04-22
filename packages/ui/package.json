@@ -9,7 +9,18 @@
     "./button": "./src/button.tsx",
     "./card": "./src/card.tsx",
     "./code": "./src/code.tsx",
-    "./styles": "./src/style.css"
+    "./styles": "./src/style.css",
+    "./sideBar":"./src/sideBar.tsx",
+    "./header":"./src/header.tsx",
+    "./navBar":"./src/navBar.tsx",
+    "./inputField":"./src/inputFields.tsx",
+    "./dialogBox":"./src/dialogBox.tsx",
+    "./toggleSwitch":"./src/toggleSwitch.tsx"
+
+
+
+
+
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",

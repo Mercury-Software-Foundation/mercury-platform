@@ -1,15 +1,16 @@
-import { type ReactNode } from "react";
-
-export function Card({
-  title,
-  children,
-  href,
-}: {
-  title?: string;
-  children?: ReactNode;
-  href?: string;
-}): JSX.Element {
-  return (
-    <a className="bg-red-500">Button</a>
-  );
+import React, { ReactNode } from "react";
+interface cardprops {
+  children?: React.ReactNode;
+  classNames?: string;
 }
+const Card = ({ children, classNames }: cardprops) => {
+  return (
+    <div
+      className={`${classNames} dark:bg-black-700 dark:border-[0.1px] border-l-slate-300 dark:text-white w-full h-full rounded-lg  dark:shadow-none shadow-md  shadow-gray-500`}
+    >
+      {children}
+    </div>
+  );
+};
+
+export default Card;
