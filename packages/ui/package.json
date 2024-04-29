@@ -9,9 +9,23 @@
     "./button": "./src/button.tsx",
     "./card": "./src/card.tsx",
     "./code": "./src/code.tsx",
-    "./styles": "./src/style.css"
+    "./styles.css": "./dist/index.css",
+    "./header":"./src/header.tsx",
+    "./navBar":"./src/navBar.tsx",
+    "./inputField":"./src/inputFields.tsx",
+    "./dialogBox":"./src/dialogBox.tsx",
+    "./toggleSwitch":"./src/toggleSwitch.tsx",
+    "./sideBar":"./src/sideBar.tsx",
+    "./deletePopupComp":"./src/deletePopupComp.tsx"
+
+
+
+
+
   },
   "scripts": {
+    "build": "tailwindcss -i ./src/style.css -o ./dist/index.css",
+    "dev": "tailwindcss -i ./src/style.css -o ./dist/index.css --watch",
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component"
   },

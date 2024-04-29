@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card } from "@repo/ui/card";
+import Card from "@repo/ui/card";
 import { Code } from "@repo/ui/code";
 import styles from "./page.module.css";
 import { Button } from "@repo/ui/button";
@@ -78,9 +78,9 @@ export default function Page(): JSX.Element {
         </div>
       </div>
 
-      <Button appName="docs" className={styles.button}>
+      {/* <Button appName="docs" className={styles.button}>
         Click me!
-      </Button>
+      </Button> */}
 
       <div className={styles.hero}>
         <div className={styles.heroContent}>
@@ -134,7 +134,7 @@ export default function Page(): JSX.Element {
 
       <div className={styles.grid}>
         {LINKS.map(({ title, href, description }) => (
-          <Card className={styles.card} href={href} key={title} title={title}>
+          <Card classNames={styles.card} key={title} >
             {description}
           </Card>
         ))}
