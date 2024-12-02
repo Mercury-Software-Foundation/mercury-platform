@@ -93,6 +93,7 @@ class DynamicMethods<T extends string, K> {
 
   constructor(name: string) {
     this.name = name;
+    //@ts-ignore
     this[`${name}`] = useCounter;
   }
   public getDynamicMethods(): DynamicMethodsInterface<T, K> {

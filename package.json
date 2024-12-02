@@ -19,5 +19,9 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "next-themes": "^0.3.0",
+    "react-icons": "^5.1.0"
+  }
 }
